@@ -1,0 +1,19 @@
+{
+    "nombre": "nombre",
+    "profesion":"profesion",
+    "bio":"bio",
+    "experiencia": [
+        {
+            "nombre":"nombre",
+            "descripcion":"descripcion",
+            "fecha":"fecha"
+        },
+        {
+           "nombre":"nombre",
+            "descripcion":"descripcion",
+            "fecha":"fecha"
+        }
+    ],
+    "habilidades":["Habilidades","Habilidades","Habilidades"]
+    
+}
