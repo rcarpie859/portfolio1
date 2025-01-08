@@ -1,19 +1,9 @@
 {
-    "nombre": "nombre",
-    "profesion":"profesion",
-    "bio":"bio",
+    "nombre": "Roberto Carralero",
+    "profesion":"Estudiante de GCFS DAW",
+    "bio":"Apasionado del deporte y la informatica",
     "experiencia": [
-        {
-            "nombre":"nombre",
-            "descripcion":"descripcion",
-            "fecha":"fecha"
-        },
-        {
-           "nombre":"nombre",
-            "descripcion":"descripcion",
-            "fecha":"fecha"
-        }
     ],
-    "habilidades":["Habilidades","Habilidades","Habilidades"]
+    "habilidades":["Trabajo en equipo","Motivacion","Capacidad de resolucion de problemas"]
     
 }
