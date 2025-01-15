@@ -3,6 +3,10 @@
     "profesion":"Estudiante de GCFS DAW",
     "bio":"Apasionado del deporte y la informatica. Actualmente estudiante de un grado superior de Desarrollo de aplicaciones web en el I.E.S HLanz",
     "experiencia": [
+       { "nombre": "Empresa1",
+        "descripcion": "Trabaje mucho",
+        "fecha": "15/06/2022"}
+
     ],
     "habilidades":["Trabajo en equipo","Motivacion","Capacidad de resolucion de problemas"]
     
