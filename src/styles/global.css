@@ -7,10 +7,73 @@ section{
     margin-right: auto;
     margin-left: auto;
 }
+.hero{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    gap: 68px;
+    background-color: black;
+    color: white;
+    border-radius: 32px;
+    height: 50vh;
+}
+.hero h1{
+    margin: 0px;
+}
+.hero p{
+    margin: 0px;
+}
+
+.nombre{
+    font-size: 60px;
+    line-height: 100%;
+}
+.profesion{
+    font-size: 32px;
+    line-height: 120%;
+    
+}
+.bio{
+    font-size: 18px;
+    font-family: 150%;
+}
+
 .experiencia{
     padding: 16px;
     background-color: blanchedalmond;
     border-radius: 16px;
     margin-bottom: 16px;
 
+}
+.exp-nombre{
+    font-size: 20px;
+    font-weight: 400;
+}
+.exp-descripcion{
+    font-size: 16px;
+    font-weight: 300;
+}
+.exp-fecha{
+    font-size: 14px;
+    font-weight: 300;
+    color: gainsboro;
+}
+.habilidad{
+    width: fit-content;
+    padding: 8px;
+    background-color:aquamarine;
+    margin-bottom: 16px;
+    
+}
+.habilidad p {
+    width: fit-content;
+    margin: 0px;
+
+}
+.envoltura-habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 }
