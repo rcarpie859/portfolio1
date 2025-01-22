@@ -1,18 +1,42 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+
+interface Project{
+	title: string
+	description: string
+}
 
 const { default: meData } = await import ('../assets/me.json');
+
+
+const projects = await Astro.glob<Project>("../pages/projects/*.md")
+console.log(projects)
 ---
 
+
 <Layout>
-	<section class="hero">
+	<Header/>
+	<section class="hero" id="Inicio">
 		<h1 class="nombre">{meData.nombre}</h1>
 		<p class="profesion">{meData.profesion}</p>
 		<p class="bio">{meData.bio}</p>	
 	</section>
 	
-	<section>
+	<section id="Proyectos">
+		<h2>Proyectos</h2>
+		{projects.map((project) =>(
+			<a class="enlace-proyecto" href={project.url}>
+				<article class= "proyecto">
+					<h3>{project.frontmatter.title}</h3>
+					<h3>{project.frontmatter.description}</h3>
+				</article>
+			</a>
+		)
+	)}
+	</section>
+	<section id="Experiencia">
 		<h2>Experiencia</h2>
 		{meData.experiencia.map((exp) => (
 		<article class="experiencia">
@@ -21,7 +45,7 @@ const { default: meData } = await import ('../assets/me.json');
 			<p class="exp-fecha">{exp.fecha}</p>		
 			</article>))}
 	</section>
-	<section>
+	<section id="Habilidades">
 		<h2>Habilidades</h2>
 		<div class="envoltura-habilidades">
 			{
