@@ -1,18 +1,24 @@
 {
     "nombre": "Roberto Carralero Piedra",
-    "profesion":"Estudiante de GCFS DAW",
-    "bio":"Apasionado del deporte y la informatica. Actualmente estudiante de un grado superior de Desarrollo de aplicaciones web en el I.E.S HLanz",
+    "profesion": "Estudiante de GCFS DAW",
+    "bio": "Apasionado del deporte y la informática. Actualmente estudiante de un grado superior de Desarrollo de aplicaciones web en el I.E.S HLanz",
     "experiencia": [
-       { "nombre": "Empresa1",
-        "descripcion": "Trabaje mucho",
-        "fecha": "15/06/2022-15/07/2022"},
-        { "nombre": "Empresa2",
-        "descripcion": "Trabaje mucho",
-        "fecha": "15/06/2023-16/01/2024"},
-        { "nombre": "Empresa3",
-        "descripcion": "Trabaje mucho",
-        "fecha": "15/06/2024-12/01/2025"}
+      {
+        "nombre": "Empresa1",
+        "descripcion": "Trabajé mucho",
+        "fecha": "15/06/2022-15/07/2022"
+      },
+      {
+        "nombre": "Empresa2",
+        "descripcion": "Trabajé mucho",
+        "fecha": "15/06/2023-16/01/2024"
+      },
+      {
+        "nombre": "Empresa3",
+        "descripcion": "Trabajé mucho",
+        "fecha": "15/06/2024-12/01/2025"
+      }
     ],
-    "habilidades":["Trabajo en equipo","Motivacion","Capacidad de resolucion de problemas"]
-    
-}
+    "habilidades": ["Trabajo en equipo", "Motivación", "Capacidad de resolución de problemas"]
+  }
+  

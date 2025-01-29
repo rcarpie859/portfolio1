@@ -1,36 +1,61 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import Nav from '../components/Nav.astro';
 import Layout from '../layouts/Layout.astro';
-
 const { default: meData } = await import ('../assets/me.json');
 ---
 
 <Layout>
-	<section class="hero">
-		<h1 class="nombre">{meData.nombre}</h1>
-		<p class="profesion">{meData.profesion}</p>
-		<p class="bio">{meData.bio}</p>	
-	</section>
-	
-	<section>
-		<h2>Experiencia</h2>
-		{meData.experiencia.map((exp) => (
-		<article class="experiencia">
-			<p class="exp-nombre">{exp.nombre}</p>
-			<p class="exp-descripcion">{exp.descripcion}</p>
-			<p class="exp-fecha">{exp.fecha}</p>		
-			</article>))}
-	</section>
-	<section>
-		<h2>Habilidades</h2>
-		<div class="envoltura-habilidades">
-			{
-				meData.habilidades.map((habilidad) =>(
-					<article class="habilidad">
-						<p>{habilidad}</p>		
-					</article>
-			))
-			}
-		</div>
-	</section>
+  <Nav />
+
+  <section id="hero" class="hero">
+    <h1 class="nombre">{meData.nombre}</h1>
+    <p class="profesion">{meData.profesion}</p>
+    <p class="bio">{meData.bio}</p>  
+  </section>
+
+  <footer class="social-footer">
+    <div class="social-links">
+      <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+      <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <section id="about" class="about-me">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy un apasionado del desarrollo web, y actualmente estoy estudiando el ciclo superior de Desarrollo de Aplicaciones Web en el I.E.S HLanz. Me encanta resolver problemas y trabajar en equipo. Además, disfruto de aprender nuevas tecnologías que me permitan mejorar mis habilidades y proyectos.
+    </p>
+    <p>
+      En mi tiempo libre, me gusta practicar deportes como el fútbol y la natación, lo que me ayuda a mantener un equilibrio entre mis estudios y mi bienestar físico. Considero que el deporte no solo me mantiene en forma, sino que también me enseña disciplina, trabajo en equipo y perseverancia.
+    </p>
+    <p>
+      Siempre busco nuevos retos y oportunidades para crecer profesionalmente y ampliar mi conocimiento sobre el desarrollo web. Me interesa especialmente el desarrollo front-end, aunque también he explorado áreas de back-end y bases de datos.
+    </p>
+    <p>
+      Mi objetivo es formar parte de un equipo de trabajo dinámico donde pueda aportar mis habilidades y seguir aprendiendo en el camino. Estoy en busca de proyectos que me desafíen y me permitan crecer como desarrollador.
+    </p>
+  </section>
+
+  <section id="experience">
+    <h2>Experiencia</h2>
+    {meData.experiencia.map((exp) => (
+      <article class="experiencia">
+        <p class="exp-nombre">{exp.nombre}</p>
+        <p class="exp-descripcion">{exp.descripcion}</p>
+        <p class="exp-fecha">{exp.fecha}</p>        
+      </article>
+    ))}
+  </section>
+
+  <section id="skills">
+    <h2>Habilidades</h2>
+    <div class="envoltura-habilidades">
+      {meData.habilidades.map((habilidad) => (
+        <article class="habilidad">
+          <p>{habilidad}</p>        
+        </article>
+      ))}
+    </div>
+  </section>
 </Layout>

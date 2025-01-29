@@ -1,79 +1,287 @@
-html{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
-section{
-    max-width: 900px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.hero{
+:root {
+    --primary-color: #1abc9c;  
+    --secondary-color: #e74c3c;  
+    --background-color: #ecf0f1;  
+    --text-color: #2c3e50;  
+    --highlight-color: #f39c12;  
+    --footer-bg-color: #34495e; 
+    --nav-bg-color: #2c3e50;  
+    --link-hover-color: #16a085;  
+    --box-bg-color: #ffffff; 
+    --box-border-color: #bdc3c7; 
+    --box-shadow-color: rgba(0, 0, 0, 0.1); 
+    
+    
+    --recuadro-bg-color: #f0f4f7; 
+  }
+  
+  
+  body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 16px;
+  }
+  
+  
+  .hero {
     display: flex;
-    padding: 20px;
     flex-direction: column;
     align-items: center;
-    height: fit-content;
-    gap: 68px;
-    background-color: black;
+    justify-content: center;
+    background-color: var(--primary-color);
     color: white;
-    border-radius: 32px;
-    height: 50vh;
-}
-.hero h1{
-    margin: 0px;
-}
-.hero p{
-    margin: 0px;
-}
-
-.nombre{
-    font-size: 60px;
-    line-height: 100%;
-}
-.profesion{
-    font-size: 32px;
-    line-height: 120%;
-    
-}
-.bio{
-    font-size: 18px;
-    font-family: 150%;
-}
-
-.experiencia{
-    padding: 16px;
-    background-color: blanchedalmond;
+    padding: 40px;
     border-radius: 16px;
+    text-align: center;
+    gap: 16px;
+    margin-top: 84px;
+  }
+  
+  .hero h1 {
+    color: black;
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+  }
+  
+  
+  section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  section h2 {
+    font-size: 2em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .recuadro {
+    background-color: var(--recuadro-bg-color) !important;
+    color: var(--text-color) !important;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid var(--box-border-color);
+    box-shadow: 0 4px 10px var(--box-shadow-color);
+    margin-bottom: 30px;
+  }
+  
+  
+  .recuadro p {
+    font-size: 1em;
+    margin: 0;
+  }
+  
+  .experiencia,
+  .habilidad {
+    background-color: var(--recuadro-bg-color);
+    padding: 20px;
     margin-bottom: 16px;
-
-}
-.exp-nombre{
-    font-size: 20px;
-    font-weight: 400;
-}
-.exp-descripcion{
-    font-size: 16px;
-    font-weight: 300;
-}
-.exp-fecha{
-    font-size: 14px;
-    font-weight: 300;
-    color: gainsboro;
-}
-.habilidad{
-    width: fit-content;
-    padding: 8px;
-    background-color:aquamarine;
-    margin-bottom: 16px;
-    
-}
-.habilidad p {
-    width: fit-content;
-    margin: 0px;
-
-}
-.envoltura-habilidades{
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .experiencia p,
+  .habilidad p {
+    font-size: 1em;
+    margin: 0;
+  }
+  
+  .exp-nombre {
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+  
+  .exp-fecha {
+    font-size: 0.9em;
+    color: var(--text-color);
+  }
+  
+  .exp-descripcion {
+    font-size: 1em;
+    color: var(--text-color);
+  }
+  
+  .habilidad p {
+    color: var(--highlight-color);
+    font-weight: bold;
+  }
+  
+ 
+  nav {
+    background-color: var(--nav-bg-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+  }
+  
+  nav ul {
     display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 8px;
+  }
+  
+  nav ul li a:hover {
+    background-color: var(--link-hover-color);
+  }
+  
+  
+  footer {
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .social-links a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px; /* Tamaño de los iconos */
+  }
+  
+  .social-links a:hover {
+    color: #ddd; /* Color de hover */
+  }
+  
+  .social-links i {
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+  }
+  
+  
+
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 100;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    list-style-type: none;
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  #about {
+    background-color: #f4f4f9;  /* Un color suave de fondo */
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #about h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  #about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  /* Footer */
+.social-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    z-index: 1000; /* Asegúrate de que el footer esté en la parte superior */
+  }
+  
+  /* Contenedor de los recuadros con iconos */
+  .social-links {
+    display: flex;
+    gap: 20px; /* Espacio entre los recuadros */
+  }
+  
+  /* Estilo de cada recuadro */
+  .social-icon {
+    display: flex; /* Usamos flexbox para centrar los iconos dentro de cada recuadro */
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #000; /* Fondo negro */
+    color: white; /* Color de los iconos */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center;
+    font-size: 30px; /* Tamaño del icono */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+  }
+  
+  /* Efecto hover */
+  .social-icon:hover {
+    background-color: #444; /* Fondo gris oscuro cuando pasas el ratón */
+    transform: scale(1.1); /* Efecto de zoom */
+  }
+  
+  /* Asegurarnos de que los iconos estén centrados dentro de los recuadros */
+  .social-icon i {
+    pointer-events: none; /* Desactiva el puntero del ratón en los iconos */
+  }
+  
+  
+  
+  
