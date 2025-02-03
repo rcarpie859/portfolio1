@@ -9,8 +9,7 @@ interface Project {
 }
 
 const { default: meData } = await import('../assets/me.json');
-const projects = await Astro.glob<Project>("../pages/projects/*.md");
-console.log(projects);
+
 ---
 
 <Layout>
