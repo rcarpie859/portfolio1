@@ -1,348 +1,377 @@
-<<<<<<< HEAD
+/* Definir la paleta de colores en escala de grises */
 :root {
-    --primary-color: #1abc9c;  
-    --secondary-color: #e74c3c;  
-    --background-color: #ecf0f1;  
-    --text-color: #2c3e50;  
-    --highlight-color: #f39c12;  
-    --footer-bg-color: #34495e; 
-    --nav-bg-color: #2c3e50;  
-    --link-hover-color: #16a085;  
-    --box-bg-color: #ffffff; 
-    --box-border-color: #bdc3c7; 
-    --box-shadow-color: rgba(0, 0, 0, 0.1); 
-    
-    
-    --recuadro-bg-color: #f0f4f7; 
-  }
-  
-  
-  body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  h1, h2, h3 {
-    color: var(--primary-color);
-    margin-bottom: 16px;
-  }
-  
-  
-  .hero {
-=======
-html{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  --primary-color: #000000;  /* Negro */
+  --secondary-color: #333333; /* Gris oscuro */
+  --background-color: #ffffff; /* Blanco */
+  --text-color: #111111; /* Negro suave */
+  --highlight-color: #777777; /* Gris medio */
+  --footer-bg-color: #222222; /* Negro intenso */
+  --link-hover-color: #555555;  /* Gris más claro */
+  --box-bg-color: #f9f9f9; /* Gris muy claro */
+  --box-border-color: #dddddd; /* Bordes en gris suave */
+  --box-shadow-color: rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  --recuadro-bg-color: #f0f0f0; /* Gris claro */
 }
 
-section{
-    max-width: 900px;
-    margin-top: 84px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.hero{
->>>>>>> 01d9987ee5f2dfe3b8a49498cb30ed65e36dd682
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--primary-color);
-    color: white;
-<<<<<<< HEAD
-    padding: 40px;
-=======
-    border-radius: 32px;
-    height: 50vh;
-}
-.hero h1{
-    margin: 0px;
-}
-.hero p{
-    margin: 0px;
+/* Reset básico para usar una fuente moderna */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; /* Usamos una fuente más moderna */
+  scroll-behavior: smooth;
 }
 
-.nombre{
-    font-size: 60px;
-    line-height: 100%;
-}
-.profesion{
-    font-size: 32px;
-    line-height: 120%;
-    
-}
-.bio{
-    font-size: 18px;
-    font-family: 150%;
-}
-.enlace-proyecto{
-    text-decoration: none;
-    color: black;
-}
-.enlace-proyecto:hover{
-    color: rgb(82, 82, 82);
-}
-.proyecto{
-    padding: 16px;
-    background-color: grey;
-    border-radius: 16px;
-    margin-bottom: 16px;
-}
-.proyecto:hover{
-    background-color: rgb(206,206,206
-    );
+/* Estilos generales */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
-.experiencia{
-    padding: 16px;
-    background-color: blanchedalmond;
->>>>>>> 01d9987ee5f2dfe3b8a49498cb30ed65e36dd682
-    border-radius: 16px;
-    text-align: center;
-    gap: 16px;
-    margin-top: 84px;
-  }
-  
-  .hero h1 {
-    color: black;
-    font-size: 3em;
-    margin: 0;
-  }
-  
-  .hero p {
-    font-size: 1.2em;
-  }
-  
-  
-  section {
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
-  section h2 {
-    font-size: 2em;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-  }
-  
-  .recuadro {
-    background-color: var(--recuadro-bg-color) !important;
-    color: var(--text-color) !important;
-    padding: 20px;
-    border-radius: 12px;
-    border: 2px solid var(--box-border-color);
-    box-shadow: 0 4px 10px var(--box-shadow-color);
-    margin-bottom: 30px;
-  }
-  
-  
-  .recuadro p {
-    font-size: 1em;
-    margin: 0;
-  }
-  
-  .experiencia,
-  .habilidad {
-    background-color: var(--recuadro-bg-color);
-    padding: 20px;
-    margin-bottom: 16px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .experiencia p,
-  .habilidad p {
-    font-size: 1em;
-    margin: 0;
-  }
-  
-  .exp-nombre {
-    font-weight: bold;
-    color: var(--secondary-color);
-  }
-  
-  .exp-fecha {
-    font-size: 0.9em;
-    color: var(--text-color);
-  }
-  
-  .exp-descripcion {
-    font-size: 1em;
-    color: var(--text-color);
-  }
-  
-  .habilidad p {
-    color: var(--highlight-color);
-    font-weight: bold;
-  }
-  
- 
-  nav {
-    background-color: var(--nav-bg-color);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    padding: 10px 0;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  
-  nav ul li {
-    margin: 0 20px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-    padding: 10px 15px;
-    border-radius: 8px;
-  }
-  
-  nav ul li a:hover {
-    background-color: var(--link-hover-color);
-  }
-  
-  
-  footer {
-    background-color: #333; /* Fondo oscuro */
-    color: white; /* Texto blanco */
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .social-links a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
-    font-size: 20px; /* Tamaño de los iconos */
-  }
-  
-  .social-links a:hover {
-    color: #ddd; /* Color de hover */
-  }
-  
-  .social-links i {
-    margin-right: 8px; /* Espacio entre el icono y el texto */
-  }
-  
-  
+/* Títulos */
+h1, h2, h3 {
+  color: var(--primary-color);
+  margin-bottom: 16px;
+}
 
-  nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #333;
-    z-index: 100;
-    padding: 10px 0;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    list-style-type: none;
-    margin: 0 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px 15px;
-  }
-  
-  nav ul li a:hover {
-    background-color: #555;
-    border-radius: 5px;
-  }
-  #about {
-    background-color: #f4f4f9;  /* Un color suave de fondo */
-    padding: 20px;
-    margin-top: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  #about h2 {
-    color: #333;
-    font-size: 2rem;
-    margin-bottom: 15px;
-  }
-  
-  #about p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  /* Footer */
+/* Sección principal (Hero) */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 40px;
+  border-radius: 32px;
+  height: 50vh;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin: 0;
+  color: white;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* Contenedores */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 2em;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+/* Recuadros */
+.recuadro {
+  background-color: #e0e0e0; /* Gris más oscuro */
+  color: var(--text-color); /* Color de texto */
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid var(--box-border-color); /* Bordes gris suave */
+  box-shadow: 0 4px 10px var(--box-shadow-color); /* Sombra */
+  margin-bottom: 30px; /* Separación entre recuadros */
+}
+
+/* Estilo de las secciones principales (Proyectos, Sobre mí, Habilidades) */
+#proyectos .recuadro,
+#sobre-mi .recuadro,
+#habilidades .recuadro {
+  background-color: #d0d0d0; /* Gris ligeramente más oscuro que antes */
+}
+
+/* Títulos dentro de los recuadros */
+.recuadro h3 {
+  color: var(--primary-color);
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: 600; /* Fuente más pesada para destacar los títulos */
+}
+
+/* Estilo de los párrafos dentro de los recuadros */
+.recuadro p {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  line-height: 1.6; /* Mejora la legibilidad */
+}
+
+/* Estilos generales para los párrafos */
+p {
+  font-size: 1em;
+  margin: 0;
+}
+
+/* Experiencia y habilidades */
+.experiencia, .habilidades {
+  background-color: var(--recuadro-bg-color);
+  padding: 20px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px var(--box-shadow-color);
+}
+
+.experiencia p, .habilidad p {
+  font-size: 1em;
+  margin: 0;
+}
+
+.exp-nombre {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.exp-fecha {
+  font-size: 0.9em;
+  color: var(--text-color);
+}
+
+.exp-descripcion {
+  font-size: 1em;
+  color: var(--text-color);
+}
+
+.habilidad p {
+  color: var(--highlight-color);
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-bg-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-links a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.social-links a:hover {
+  color: #ddd;
+}
+
+/* Iconos de redes sociales en el footer */
 .social-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    z-index: 1000; /* Asegúrate de que el footer esté en la parte superior */
-  }
-  
-  /* Contenedor de los recuadros con iconos */
-  .social-links {
-    display: flex;
-    gap: 20px; /* Espacio entre los recuadros */
-  }
-  
-  /* Estilo de cada recuadro */
-  .social-icon {
-    display: flex; /* Usamos flexbox para centrar los iconos dentro de cada recuadro */
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    background-color: #000; /* Fondo negro */
-    color: white; /* Color de los iconos */
-    border-radius: 10px; /* Bordes redondeados */
-    text-align: center;
-    font-size: 30px; /* Tamaño del icono */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    text-decoration: none; /* Quitar subrayado de los enlaces */
-  }
-  
-  /* Efecto hover */
-  .social-icon:hover {
-    background-color: #444; /* Fondo gris oscuro cuando pasas el ratón */
-    transform: scale(1.1); /* Efecto de zoom */
-  }
-  
-  /* Asegurarnos de que los iconos estén centrados dentro de los recuadros */
-  .social-icon i {
-    pointer-events: none; /* Desactiva el puntero del ratón en los iconos */
-  }
-  
-  
-  
-  
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  z-index: 1000;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 30px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.1);
+}
+
+/* Eliminar cualquier menú lateral no deseado */
+.sidebar, .menu-left, .left-menu {
+  display: none !important;
+}
+
+/* Estilos del menú de navegación */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: black;
+  padding: 10px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+/* Estilos para los enlaces de menú (cuadrados) */
+.menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px; /* Tamaño de los cuadraditos */
+  height: 50px; /* Tamaño de los cuadraditos */
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu-item:hover {
+  background-color: gray;
+  transform: scale(1.1);
+}
+
+/* Ajustar la separación de las secciones */
+section {
+  padding-top: 100px;
+}
+
+/* Sección de habilidades y recuadros generales */
+.section {
+  padding: 40px;
+  background-color: var(--recuadro-bg-color); /* Fondo gris claro */
+  border-radius: 12px; /* Bordes redondeados */
+  border: 2px solid var(--box-border-color); /* Borde gris suave */
+  box-shadow: 0 4px 10px var(--box-shadow-color); /* Sombra */
+  margin-bottom: 20px; /* Separación entre secciones */
+}
+
+.section h2 {
+  font-size: 2em;
+  color: var(--primary-color); /* Títulos en negro */
+  margin-bottom: 16px;
+}
+
+.section ul {
+  list-style: disc; /* Lista con puntos */
+  padding-left: 20px;
+  margin: 0;
+  color: var(--text-color); /* Color del texto */
+}
+
+.section ul li {
+  margin-bottom: 8px; /* Separación entre elementos de la lista */
+  font-size: 1em;
+}
+
+/* Para cada subtítulo dentro de la sección (Hard Skills, Soft Skills, etc.) */
+.subtitulo {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: var(--secondary-color); /* Gris oscuro */
+}
+
+.social-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: var(--footer-bg-color); /* Fondo gris oscuro */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px var(--box-shadow-color);
+}
+
+.social-links {
+  display: flex;
+  gap: 20px; /* Espaciado entre iconos */
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color); /* Fondo negro */
+  color: white;
+  font-size: 1.5em;
+  border-radius: 50%; /* Iconos circulares */
+  transition: transform 0.3s, background-color 0.3s;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: var(--secondary-color); /* Fondo gris oscuro al pasar el ratón */
+  transform: scale(1.1); /* Efecto de ampliación */
+}
+
+/* Iconos de redes sociales en el footer */
+.social-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: var(--footer-bg-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px var(--box-shadow-color);
+  margin-top: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color); /* Fondo negro */
+  color: white;
+  font-size: 1.5em;
+  border-radius: 50%; /* Iconos circulares */
+  transition: transform 0.3s, background-color 0.3s;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: var(--secondary-color); /* Fondo gris oscuro al pasar el ratón */
+  transform: scale(1.1); /* Efecto de ampliación */
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

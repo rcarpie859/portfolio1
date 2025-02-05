@@ -2,81 +2,70 @@
 import Nav from '../components/Nav.astro';
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
-
-interface Project {
-  title: string;
-  description: string;
-}
+import Footer from '../components/Footer.astro';
 
 const { default: meData } = await import('../assets/me.json');
-
 ---
 
-<Layout>
-  <Nav />
-  <Header />
-  
-  <section id="hero" class="hero">
-    <h1 class="nombre">{meData.nombre}</h1>
-    <p class="profesion">{meData.profesion}</p>
-    <p class="bio">{meData.bio}</p>  
-  </section>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
 
-  <section id="about" class="about-me">
-    <h2>Sobre mí</h2>
-    <p>
-      Soy un apasionado del desarrollo web, y actualmente estoy estudiando el ciclo superior de Desarrollo de Aplicaciones Web en el I.E.S HLanz. Me encanta resolver problemas y trabajar en equipo. Además, disfruto de aprender nuevas tecnologías que me permitan mejorar mis habilidades y proyectos.
-    </p>
-    <p>
-      En mi tiempo libre, me gusta practicar deportes como el fútbol y la natación, lo que me ayuda a mantener un equilibrio entre mis estudios y mi bienestar físico. Considero que el deporte no solo me mantiene en forma, sino que también me enseña disciplina, trabajo en equipo y perseverancia.
-    </p>
-    <p>
-      Siempre busco nuevos retos y oportunidades para crecer profesionalmente y ampliar mi conocimiento sobre el desarrollo web. Me interesa especialmente el desarrollo front-end, aunque también he explorado áreas de back-end y bases de datos.
-    </p>
-    <p>
-      Mi objetivo es formar parte de un equipo de trabajo dinámico donde pueda aportar mis habilidades y seguir aprendiendo en el camino. Estoy en busca de proyectos que me desafíen y me permitan crecer como desarrollador.
-    </p>
-  </section>
+  <!-- Incluir Font Awesome desde CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
 
-  <section id="Proyectos">
-    <h2>Proyectos</h2>
-    {projects.map((project) => (
-      <a class="enlace-proyecto" href={project.url}>
-        <article class="proyecto">
-          <h3>{project.frontmatter.title}</h3>
-          <p>{project.frontmatter.description}</p>
-        </article>
-      </a>
-    ))}
-  </section>
+<body>
+  <Layout>
+    <Nav />
+    <Header />
 
-  <section id="Experiencia">
-    <h2>Experiencia</h2>
-    {meData.experiencia.map((exp) => (
-      <article class="experiencia">
-        <p class="exp-nombre">{exp.nombre}</p>
-        <p class="exp-descripcion">{exp.descripcion}</p>
-        <p class="exp-fecha">{exp.fecha}</p>        
-      </article>
-    ))}
-  </section>
+    <section id="inicio" class="hero">
+      <h1 class="nombre">{meData.nombre}</h1>
+      <p class="profesion">{meData.profesion}</p>
+      <p class="bio">{meData.bio}</p>  
+    </section>
 
-  <section id="Habilidades">
-    <h2>Habilidades</h2>
-    <div class="envoltura-habilidades">
-      {meData.habilidades.map((habilidad) => (
-        <article class="habilidad">
-          <p>{habilidad}</p>        
-        </article>
-      ))}
-    </div>
-  </section>
+    <section id="sobre-mi" class="about-me recuadro">  
+      <h2>Sobre mí</h2>
+      <p> 
+        Soy un apasionado del desarrollo web, y actualmente estoy estudiando el ciclo superior de Desarrollo de Aplicaciones Web en el I.E.S HLanz. Me encanta resolver problemas y trabajar en equipo. 
+      </p>
+    </section>
 
-  <footer class="social-footer">
-    <div class="social-links">
-      <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-      <a href="https://github.com" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-      <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-    </div>
-  </footer>
-</Layout>
+    <section id="proyectos" class="projects recuadro">
+      <h2>Proyectos</h2>
+      <div class="project">
+        <h3>Proyecto 1: Aplicación Web de Tareas</h3>
+        <p>Aplicación web donde los usuarios pueden crear, editar y eliminar tareas.</p>
+      </div>
+    </section>
+
+    <section id="habilidades" class="skills recuadro">
+      <h2>Habilidades</h2>
+      <div class="habilidades-container">
+        <div class="hard-skills recuadro">
+          <h3>Hard Skills</h3>
+          <ul>
+            <li>JavaScript y Java</li>
+            <li>Bases de datos (MariaDB, MySQL)</li>
+          </ul>
+        </div>
+        <div class="soft-skills recuadro">
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Trabajo en equipo</li>
+            <li>Resolución de problemas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer importado -->
+    <Footer />
+  </Layout>
+</body>
+</html>

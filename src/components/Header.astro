@@ -1,66 +1,50 @@
 <header>
+  <!-- Menú de navegación -->
   <nav>
-      <ul>
-          <li><a href="/#Inicio">Inicio</a></li>
-          <li><a href="/#Proyectos">Proyectos</a></li>
-          <li><a href="/#Experiencia">Experiencia</a></li>
-          <li><a href="/#Habilidades">Habilidades</a></li>
-      </ul>
+    <ul>
+      <li><a href="#inicio" class="menu-item">Inicio</a></li>
+      <li><a href="#sobre-mi" class="menu-item">Sobre mí</a></li>
+      <li><a href="#proyectos" class="menu-item">Proyectos</a></li>
+      <li><a href="#habilidades" class="menu-item">Habilidades</a></li> 
+    </ul>
   </nav>
-</header>
-<style>
-  header {
+
+  <!-- Estilos del header -->
+  <style>
+    header {
       width: 100%;
       position: fixed;
-      left: 50%;
-      top: 0px;
-      bottom: auto;
-      transform: translateX(-50%);
-      margin: 16px 0;
-      grid-area: header;
-      margin-top: 16px;
-  }
+      top: 0;
+      left: 0;
+      background-color: var(--nav-bg-color);
+      padding: 10px 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px var(--box-shadow-color);
+    }
 
-  nav {
-      width: fit-content;
-      margin: 0 auto;
-      border-radius: 16px;
-      background-color: black;
-  }
-
-  ul {
+    nav ul {
       display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      align-items: stretch;
-      margin: 0;
+      justify-content: center;
       padding: 0;
-      border-radius: 32px;
-      border: var(--card-border);
-      background-color: var(--gray-medium-transparent);
-      box-shadow: var(--box-shadow);
-      backdrop-filter: var(--blur);
-      -webkit-backdrop-filter: var(--blur);
-  }
+      margin: 0;
+      list-style: none;
+    }
 
-  li {
-      list-style-type: none;
-      margin: 8px;
-      padding: 8px 0;
-  }
+    nav ul li {
+      margin: 0 20px;
+    }
 
-  a {
-      text-decoration: none;
-      color: #ffffff;
-      padding: 8px 16px;
-      border-radius: 24px;
-  }
-
-  a:hover {
-      background-color: var(--gray-ultra-light-transparent);
-      backdrop-filter: var(--blur);
-      -webkit-backdrop-filter: var(--blur);
-      text-decoration: none;
+    nav ul li a {
       color: white;
-  }
-</style>
+      text-decoration: none;
+      font-size: 1.2em;
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: var(--link-hover-color);
+    }
+  </style>
+</header>

@@ -1,18 +1,68 @@
 <footer>
-  <div class="footer-content">
-    <p>&copy; 2025 Roberto Carralero Piedra. Todos los derechos reservados.</p>
-    <p>Hecho con <span>❤️</span> por Roberto Carralero Piedra</p>
-  
+  <div class="social-footer">
     <div class="social-links">
-      <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i> LinkedIn
+      <!-- Icono de Instagram -->
+      <a href="https://www.instagram.com" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i>
       </a>
-      <a href="https://github.com" target="_blank" aria-label="GitHub">
-        <i class="fab fa-github"></i> GitHub
+
+      <!-- Icono de Twitter -->
+      <a href="https://twitter.com" target="_blank" class="social-icon">
+        <i class="fab fa-twitter"></i>
       </a>
-      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-        <i class="fab fa-twitter"></i> Twitter
+
+      <!-- Icono de GitHub -->
+      <a href="https://github.com/rcarpie859" target="_blank" class="social-icon">
+        <i class="fab fa-github"></i>
       </a>
     </div>
   </div>
+
+  <style>
+    /* Asegurarnos de que el footer no tenga fondo no deseado */
+    footer {
+      background-color: transparent; /* Eliminamos cualquier fondo */
+      padding: 20px 0;
+      margin: 0; /* Evitamos márgenes externos */
+    }
+
+    body {
+      margin: 0; /* Eliminamos márgenes en todo el documento */
+      padding: 0; /* Eliminamos relleno */
+      background-color: white; /* Opcional: Fondo general blanco */
+    }
+
+    .social-footer {
+      text-align: center;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .social-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      background-color: #000; /* Fondo negro en los iconos */
+      color: white;
+      font-size: 1.5em;
+      border-radius: 50%;
+      transition: background-color 0.3s, transform 0.3s ease;
+      text-decoration: none;
+    }
+
+    .social-icon i {
+      font-size: 1.8em;
+    }
+
+    .social-icon:hover {
+      background-color: #555;
+      transform: scale(1.1);
+    }
+  </style>
 </footer>
